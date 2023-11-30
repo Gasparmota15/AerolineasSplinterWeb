@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Roboto:wght@100;300;400;500;700&display=swap');
+/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border 1px solid blue; */
+}
+
+a , li{
+    display: inline-block;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*======================================*/
+/*INDEX*/
+/*======================================*/
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../images/background.jpg); z-index: 100;
+
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px ;
+}
+
+/*======================================*/
+/*HEADER*/
+/*======================================*/
+
+/*PROPIEDADES DEL HEADER*/
+#header {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    backdrop-filter: blur(30px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/*PROPIEDADES DEL NAV*/
+#navBar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navBar img {
+    width: 60px;
+}
+
+#navBar ul li a {
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 10px;
+    color: black;
+    transition: .7s;
+}
+
+#navBar ul {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+#navBar ul a:hover {
+    color: aqua;
+    font-size: 25px;
+    transition: .5s;}
+
+#navBar ul a:active {
+    color: red;
+}
+/*======================================*/
+/*SECCION BANNER*/
+/*======================================*/
+#Banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: unset;
+}
+/*CONTENIDO*/
+#Banner .banner__contenido {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    padding-left: 40px;
+    text-align: center;
+}
+.banner_eslogan ,
+.banner_boton {
+    margin-top: 50px;
+    z-index: 106;
+}
+
+/*CONTENIDO ESLOGAN*/
+.banner_eslogan h1 {
+    font-size: 30px;
+    color: aqua;
+}
+
+/*CONTENIDO BOTON*/
+.banner__boton {
+    width: 120px;
+    height: 40px;
+    background-color: #f0943e;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 105;
+}
+
+/*======================================*/
+/*SECTION SERVICIOS*/
+/*======================================*/
+#servicios {
+    background-color: #d9d9d9;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#servicios .serviciosBox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+#servicios .serviciosBox article {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#servicios img {
+    width: 55px;
+}
+
+/*======================================*/
+/*SECTION DESTINOS*/
+/*======================================*/
+#destinos {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.destinosBox {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#destinos h2 {
+    letter-spacing: 4px;
+}
+
+/*CONTENIDO*/
+.destino1,
+.destino2,
+.destino3 {
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding-bottom: 25px;
+}
+.destino1 h3,
+.destino2 h3,
+.destino3 h3 {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+.destinosBox img {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    .destinosBox {
+        flex-wrap: wrap;
+    }
+}
+
+
+/*======================================*/
+/*PAGINA CONTACTO*/
+/*======================================*/
+
+
+form {
+    width: 100%;
+    height: auto;
+    background-color: aqua ;
+}
+
+/*======================================*/
+/*PAGINA IMÁGENES*/
+/*======================================*/
+
+
+/*======================================*/
+/*PAGINA IMÁGENES: CANCUN*/
+/*======================================*/
+#containerGridCancun {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    /*  COL1             COL2          COL3*/
+    "imgCancun-1 imgCancun-2 imgCancun-2" /*FILA 1*/
+    "imgCancun-3 imgCancun-2 imgCancun-2" /*FILA 2*/
+    ;
+    gap: 10px;
+}
+
+/*AREAS PARA LAS IMG CANCUN */
+.imgCancun-1 {
+    grid-area: imgCancun-1;
+}
+.imgCancun-2 {
+    grid-area: imgCancun-2;
+}
+.imgCancun-3 {
+    grid-area: imgCancun-3;
+
+}
+/*IMAGENES DE FONDO PARA CANCUN*/
+.imgCancun-1 {
+    background-image: url(../images/Cancun1.jpg);
+    background-size: cover;
+}
+.imgCancun-2 {
+    background-image: url(../images/Cancun2.jpg);
+    background-size: cover;
+}
+.imgCancun-3{
+    background-image: url(../images/Cancun3.jpg);
+    background-size: cover;
+}
+
+/*======================================*/
+/*PAGINA IMÁGENES: CATARATAS*/
+/*======================================*/
+
+
+#containerGridCataratas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    /*  COL1             COL2          COL3*/
+    "imgCataratas-1 imgCataratas-2 imgCataratas-2" /*FILA 1*/
+    "imgCataratas-3 imgCataratas-2 imgCataratas-2" /*FILA 2*/
+    ;
+    gap: 10px;
+    z-index: 105;
+}
+
+/*AREAS PARA LAS IMG CATARATAS */
+.imgCataratas-1 {
+    grid-area: imgCataratas-1;
+}
+.imgCataratas-2 {
+    grid-area: imgCataratas-2;
+}
+.imgCataratas-3 {
+    grid-area: imgCataratas-3;
+
+}
+/*IMAGENES DE FONDO PARA CATARATAS*/
+.imgCataratas-1 {
+    background-image: url(../images/Cataratas1.jpg);
+    background-size: cover;
+}
+.imgCataratas-2 {
+    background-image: url(../images/Cataratas2.jpg);
+    background-size: cover;
+}
+.imgCataratas-3{
+    background-image: url(../images/Cataratas3.jpg);
+    background-size: cover;
+}
+
+/*======================================*/
+/*PAGINA IMÁGENES: RIO DE JANEIRO*/
+/*======================================*/
+
+#containerGridRiodejaneiro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    /*  COL1       COL2    COL3*/
+    "imgRio-1 imgRio-2 imgRio-2" /*FILA 1*/
+    "imgRio-3 imgRio-2 imgRio-2" /*FILA 2*/
+    ;
+    gap: 10px;
+    z-index: 105;
+}
+
+/*AREAS PARA LAS IMG RIO DE JANEIRO */
+.imgRio-1 {
+    grid-area: imgRio-1;
+}
+.imgRio-2 {
+    grid-area: imgRio-2;
+}
+.imgRio-3 {
+    grid-area: imgRio-3;
+
+}
+/*IMAGENES DE FONDO PARA RIO DE JANEIRO*/
+.imgRio-1 {
+    background-image: url(../images/Rio1.jpg);
+    background-size: cover;
+}
+.imgRio-2 {
+    background-image: url(../images/Rio2.jpg);
+    background-size: cover;
+}
+.imgRio-3{
+    background-image: url(../images/Rio3.jpg);
+    background-size: cover;
+}
+
+
+
+/*======================================*/
+/*ESTILOS FOOTER*/
+/*======================================*/
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: #e6eefa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+/*ARTICULO CONTENEDOR DE LOGO*/
+.footerLogo {
+    width: 140px;
+    height: 140px;
+}
+.footerLogo {
+    filter: drop-shadow(30px 10px 4px aqua);
+}
+
+/*ARTICULO CONTENEDOR DE LINKS*/
+.footer__links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer__links ul li a {
+    color: black;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+/*ARTICULO CONTENEDOR DE REDES*/
+.footerRedes {
+    border: 1px dotted black;
+    border-radius: 100%;
+    padding: 4px;
+    width: 50px;
+    margin: 5px;
+}
+
+/*======================================*/
+/*ESTILOS FOOTER: SISTEMA RESPONSIVO*/
+/*======================================*/
+@media (max-width: 768px) {
+    
+    .footerLogo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footerRedes {
+        width: 40px;
+    }
+
+    .footer__links ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        padding-top: 10px;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+}

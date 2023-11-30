@@ -1,0 +1,5 @@
+El navBar no pude lograr que sea translucido 
+En el banner el boton de Saber Mas no pude lograr que se vea
+En la seccion servicios no pude lograr alinearlos
+En el footer la ul con los links a las dif pages no logre alinearlo en el centro
+Y en la page de imagenes no logre que la imagenes se vieran, intente con z index no pude tmb intente quitando el background y ni si quieran asi se ven no se porque
