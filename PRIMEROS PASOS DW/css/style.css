@@ -350,6 +350,37 @@ form {
 }
 
 /*======================================*/
+/*PAGINA CONOCENOS*/
+/*======================================*/
+#quienesSomos {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Quienes\ somos.jpg);
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: unset;
+}
+
+/*======================================*/
+/*PAGINA CONOCENOS: TITULO*/
+/*======================================*/
+.quienesTitulo h2 {
+  font-size: 100px;
+}
+
+/*======================================*/
+/*PAGINA CONOCENOS: PARRAFO*/
+/*======================================*/
+.quienesParrafo p {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-left: 600px;
+  margin-right: 30px;
+}
+
+/*======================================*/
 /*ESTILOS FOOTER*/
 /*======================================*/
 #footer {
